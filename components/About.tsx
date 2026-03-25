@@ -28,7 +28,7 @@ export default function About() {
           <div className="space-y-5 text-slate-300 leading-relaxed text-[1.05rem]">
             <p>
               <strong className="text-white">Abdulakhad Turgunaliev</strong> is a{" "}
-              <span className="text-blue-300 font-semibold">young entrepreneur</span> and digital
+              <span className="font-semibold text-white border-b border-white/20">young entrepreneur</span> and digital
               solutions specialist focused on building high-quality, full-stack websites and applications for
               modern businesses.
             </p>
@@ -39,7 +39,7 @@ export default function About() {
             </p>
             <p>
               In addition to his work in tech, he operates an{" "}
-              <span className="text-violet-300 font-semibold">international e-bike rental business in Poland</span>{" "}
+              <span className="font-semibold text-white border-b border-white/20">international e-bike rental business in Poland</span>{" "}
               and brings hands-on professional experience from his role at the Four Seasons Hotel Toronto.
             </p>
             <p>
