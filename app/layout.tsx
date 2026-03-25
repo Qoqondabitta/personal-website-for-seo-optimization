@@ -61,16 +61,24 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Person",
   name: "Abdulakhad Turgunaliev",
+  birthDate: "2005-09-02",
   url: SITE_URL,
-  image: `${SITE_URL}/abdulakhad-turgunaliev.jpg`,
-  jobTitle: ["AI Developer", "Entrepreneur", "Student"],
+  image: `${SITE_URL}/Abdulakhad-Turgunaliev.png`,
+  jobTitle: "Entrepreneur, Full-Stack Developer",
   description: META_DESCRIPTION,
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Toronto",
+    addressCountry: "Canada",
+  },
   sameAs: [
-    "https://linkedin.com/in/abdulakhad-turgunaliev", // ← update
-    "https://github.com/abdulakhad-turgunaliev",       // ← update
+    "https://linkedin.com/in/abdulakhad-turgunaliev",
+    "https://github.com/abdulakhad-turgunaliev",
   ],
   knowsAbout: [
     "Artificial Intelligence",
+    "Web Development",
+    "Business Development",
     "Machine Learning",
     "Full Stack Development",
     "Next.js",

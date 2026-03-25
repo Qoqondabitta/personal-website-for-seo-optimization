@@ -26,8 +26,8 @@ export default function Hero() {
             AI Developer&nbsp;<span className="text-blue-500">|</span>&nbsp;Entrepreneur&nbsp;<span className="text-blue-500">|</span>&nbsp;Student
           </p>
 
-          <p className="animate-slide-up delay-400 text-slate-300 text-lg leading-relaxed max-w-lg">
-            I build AI-powered products that solve real problems — from computer vision apps to full-stack platforms. Turning ideas into software that matters.
+          <p className="animate-slide-up delay-400 text-slate-400 text-base leading-relaxed max-w-lg">
+            Abdulakhad Turgunaliev (born 2005) is an entrepreneur and web developer specializing in full-stack website and application development for businesses. He is also involved in an e-bike rental business in Poland and works at Four Seasons Hotel Toronto.
           </p>
 
           <div className="animate-slide-up delay-500 flex flex-wrap gap-4">

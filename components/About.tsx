@@ -1,3 +1,5 @@
+import ProfileFacts from "./ProfileFacts";
+
 const skills = [
   { category: "AI / ML", items: ["Python", "TensorFlow", "OpenAI API", "Claude API", "Computer Vision"] },
   { category: "Frontend", items: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Expo"] },
@@ -9,6 +11,7 @@ export default function About() {
   return (
     <section id="about" className="py-28 px-6" aria-labelledby="about-heading">
       <div className="max-w-6xl mx-auto">
+
         <div className="flex items-center gap-3 mb-6">
           <span className="tag">About</span>
           <div className="h-px flex-1 max-w-xs bg-gradient-to-r from-blue-500/50 to-transparent" />
@@ -18,29 +21,28 @@ export default function About() {
           Who is <span className="gradient-text">Abdulakhad Turgunaliev?</span>
         </h2>
 
+        {/* Bio + ProfileFacts */}
         <div className="grid lg:grid-cols-2 gap-12 mt-12">
-          {/* Bio */}
+
+          {/* (A) Luxury Bio */}
           <div className="space-y-5 text-slate-300 leading-relaxed text-[1.05rem]">
             <p>
-              Hi — I&apos;m <strong className="text-white">Abdulakhad Turgunaliev</strong>, an AI developer,
-              entrepreneur, and student with a passion for building intelligent software that solves real-world
-              problems. I&apos;ve been writing code for over three years, focusing on the intersection of
-              artificial intelligence and product development.
+              <strong className="text-white">Abdulakhad Turgunaliev</strong> is a young entrepreneur and digital
+              solutions specialist focused on building high-quality, full-stack websites and applications for
+              modern businesses.
             </p>
             <p>
-              My journey started with a curiosity about how machines learn. Today,{" "}
-              <strong className="text-white">Abdulakhad Turgunaliev</strong> ships products that integrate AI
-              APIs, computer vision, and full-stack web technologies — from concept to deployment.
+              With a strong interest in artificial intelligence and emerging technologies, he helps business owners
+              transform their ideas into scalable, efficient digital products. His work emphasizes clean design,
+              performance, and real-world impact.
             </p>
             <p>
-              As a student, I believe the best education comes from building. I combine academic rigor with
-              hands-on projects, constantly iterating and learning from real users. Whether it&apos;s a
-              food-tracking app powered by Claude&apos;s vision API or a SaaS tool that automates workflows,
-              I approach every project with the mindset of a founder.
+              In addition to his work in tech, he operates an international e-bike rental business in Poland and
+              brings hands-on professional experience from his role at the Four Seasons Hotel Toronto.
             </p>
             <p>
-              When I&apos;m not coding, I&apos;m reading about emerging AI research, exploring new frameworks,
-              or brainstorming the next product idea.
+              Driven by growth, discipline, and innovation, Turgunaliev is committed to delivering value and
+              continuously evolving in the fast-changing world of technology and business.
             </p>
 
             <div className="pt-2">
@@ -57,27 +59,31 @@ export default function About() {
             </div>
           </div>
 
-          {/* Skills */}
-          <div className="space-y-5">
-            {skills.map((group) => (
-              <div key={group.category} className="glass rounded-2xl p-5">
-                <h3 className="text-sm font-semibold text-slate-400 uppercase tracking-wider mb-3">
-                  {group.category}
-                </h3>
-                <div className="flex flex-wrap gap-2">
-                  {group.items.map((skill) => (
-                    <span
-                      key={skill}
-                      className="px-3 py-1 rounded-lg bg-white/5 border border-white/8 text-slate-300 text-sm hover:bg-blue-500/10 hover:border-blue-500/30 hover:text-blue-300 transition-all duration-200 cursor-default"
-                    >
-                      {skill}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
+          {/* (B) Knowledge Panel Card */}
+          <ProfileFacts />
         </div>
+
+        {/* Skills */}
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-16">
+          {skills.map((group) => (
+            <div key={group.category} className="glass rounded-2xl p-5">
+              <h3 className="text-xs font-semibold text-slate-400 uppercase tracking-wider mb-3">
+                {group.category}
+              </h3>
+              <div className="flex flex-wrap gap-2">
+                {group.items.map((skill) => (
+                  <span
+                    key={skill}
+                    className="px-3 py-1 rounded-lg bg-white/5 border border-white/8 text-slate-300 text-sm hover:bg-blue-500/10 hover:border-blue-500/30 hover:text-blue-300 transition-all duration-200 cursor-default"
+                  >
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+
       </div>
     </section>
   );
