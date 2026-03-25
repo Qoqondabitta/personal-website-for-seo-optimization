@@ -23,7 +23,7 @@ export default function Hero() {
           </h1>
 
           <p className="animate-slide-up delay-300 text-xl md:text-2xl text-slate-400 font-light font-mono tracking-wide">
-            AI Developer&nbsp;<span className="text-blue-500">|</span>&nbsp;Entrepreneur&nbsp;<span className="text-blue-500">|</span>&nbsp;Student
+            AI Freak&nbsp;<span className="text-blue-500">|</span>&nbsp;Entrepreneur&nbsp;<span className="text-blue-500">|</span>&nbsp;Web&App Developer
           </p>
 
           <p className="animate-slide-up delay-400 text-slate-400 text-base leading-relaxed max-w-lg">
@@ -42,7 +42,7 @@ export default function Hero() {
           {/* Quick stats */}
           <div className="animate-fade-in delay-600 flex gap-8 pt-4 border-t border-white/5">
             {[
-              { value: "10+", label: "Projects Built" },
+              { value: "50+", label: "Projects Built" },
               { value: "3+", label: "Years Coding" },
               { value: "AI", label: "Core Focus" },
             ].map((s) => (
@@ -77,10 +77,13 @@ export default function Hero() {
 
             {/* Floating badges */}
             <div className="absolute -top-2 -right-2 md:top-4 md:-right-6 glass border border-blue-500/30 rounded-xl px-3 py-2 text-sm font-medium text-blue-300 backdrop-blur-xl shadow-xl">
-              🤖 AI Developer
+              🤖 AI Freak
             </div>
             <div className="absolute -bottom-2 -left-2 md:bottom-4 md:-left-6 glass border border-violet-500/30 rounded-xl px-3 py-2 text-sm font-medium text-violet-300 backdrop-blur-xl shadow-xl">
-              🚀 Builder
+              🚀 Web Developer
+            </div>
+            <div className="absolute -bottom-2 -right-2 md:bottom-4 md:-right-6 glass border border-cyan-500/30 rounded-xl px-3 py-2 text-sm font-medium text-cyan-300 backdrop-blur-xl shadow-xl">
+              📱 App Developer
             </div>
           </div>
         </div>
