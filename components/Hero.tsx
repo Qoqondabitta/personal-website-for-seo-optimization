@@ -76,13 +76,13 @@ export default function Hero() {
             </div>
 
             {/* Floating badges */}
-            <div className="absolute -top-2 -right-2 md:top-4 md:-right-6 glass border border-blue-500/30 rounded-xl px-3 py-2 text-sm font-medium text-blue-300 backdrop-blur-xl shadow-xl">
+            <div className="absolute top-3 right-3 md:top-4 md:-right-6 glass border border-blue-500/30 rounded-xl px-2 py-1 md:px-3 md:py-2 text-xs md:text-sm font-medium text-blue-300 backdrop-blur-xl shadow-xl whitespace-nowrap">
               🤖 AI Freak
             </div>
-            <div className="absolute -bottom-2 -left-2 md:bottom-4 md:-left-6 glass border border-violet-500/30 rounded-xl px-3 py-2 text-sm font-medium text-violet-300 backdrop-blur-xl shadow-xl">
+            <div className="absolute bottom-3 left-3 md:bottom-4 md:-left-6 glass border border-violet-500/30 rounded-xl px-2 py-1 md:px-3 md:py-2 text-xs md:text-sm font-medium text-violet-300 backdrop-blur-xl shadow-xl whitespace-nowrap">
               🚀 Web Developer
             </div>
-            <div className="absolute -bottom-2 -right-2 md:bottom-4 md:-right-6 glass border border-cyan-500/30 rounded-xl px-3 py-2 text-sm font-medium text-cyan-300 backdrop-blur-xl shadow-xl">
+            <div className="absolute bottom-14 right-3 md:bottom-4 md:-right-6 glass border border-cyan-500/30 rounded-xl px-2 py-1 md:px-3 md:py-2 text-xs md:text-sm font-medium text-cyan-300 backdrop-blur-xl shadow-xl whitespace-nowrap">
               📱 App Developer
             </div>
           </div>
