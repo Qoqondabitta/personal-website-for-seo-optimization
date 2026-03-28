@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import ScrollEagle from "@/components/ScrollEagle";
+import FloatingRobot from "@/components/FloatingRobot";
 
 const FULL_NAME = "Abdulakhad Turgunaliev";
 const SITE_URL = "https://abdulakhadturgunaliev.com"; // ← update after deploying
@@ -104,6 +105,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="antialiased">
         {children}
         <ScrollEagle />
+        <FloatingRobot />
       </body>
     </html>
   );
