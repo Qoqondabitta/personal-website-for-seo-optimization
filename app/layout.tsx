@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import ScrollEagle from "@/components/ScrollEagle";
 
 const FULL_NAME = "Abdulakhad Turgunaliev";
 const SITE_URL = "https://abdulakhadturgunaliev.com"; // ← update after deploying
@@ -100,7 +101,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <meta name="google-site-verification" content="O7Kc5EKsqXSSrMn1dbZ8xCQFLLE8rce4Ti6-OZukvyg" />
       </head>
-      <body className="antialiased">{children}</body>
+      <body className="antialiased">
+        {children}
+        <ScrollEagle />
+      </body>
     </html>
   );
 }
