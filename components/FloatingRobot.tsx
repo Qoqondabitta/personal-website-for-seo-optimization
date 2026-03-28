@@ -96,7 +96,7 @@ export default function FloatingRobot() {
               height={120}
               priority
               className="
-                w-16 h-16 md:w-24 md:h-24
+                w-28 h-28 md:w-24 md:h-24
                 object-contain
                 drop-shadow-[0_8px_24px_rgba(59,130,246,0.35)]
                 transition-all duration-200
