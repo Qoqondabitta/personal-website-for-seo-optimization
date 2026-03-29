@@ -3,10 +3,10 @@ import "./globals.css";
 import FloatingRobot from "@/components/FloatingRobot";
 
 const FULL_NAME = "Abdulakhad Turgunaliev";
-const SITE_URL = "https://abdulakhadturgunaliev.com"; // ← update after deploying
-const TAGLINE = "AI Developer | Entrepreneur | Student";
+const SITE_URL = "https://abdulakhad-turgunaliev.netlify.app"; // ← update after deploying
+const TAGLINE = "Entrepreneur | Accountant | Software Engineer";
 const META_DESCRIPTION =
-  "Abdulakhad Turgunaliev — AI Developer, Entrepreneur, and Student building intelligent products. Explore projects, background, and get in touch.";
+  "Abdulakhad Turgunaliev — Young Entrepreneur from Uzbekistan specializing in mobile and app development. Strong background in Accounting.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -17,10 +17,14 @@ export const metadata: Metadata = {
   description: META_DESCRIPTION,
   keywords: [
     "Abdulakhad Turgunaliev",
-    "AI Developer",
-    "Entrepreneur",
-    "Full Stack Developer",
-    "Next.js",
+    "Abdulaxad Turg'unaliyev",
+    "Абдулахад Тургуналиев",
+    "Abdulakhad",
+    "Abdulaxad",
+    "Абдулахад",
+    "Тургуналиев",
+    "Turgunaliev",
+    "Turg'unaliyev",
     "Machine Learning",
   ],
   authors: [{ name: FULL_NAME, url: SITE_URL }],
@@ -55,6 +59,14 @@ export const metadata: Metadata = {
     creator: "@abdulakhaddev", // ← update with your Twitter/X handle
   },
   alternates: { canonical: SITE_URL },
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/icon.png",    type: "image/png" },
+    ],
+    shortcut: "/favicon.ico",
+    apple:    "/apple-touch-icon.png",
+  },
 };
 
 // JSON-LD Person schema — the most important SEO signal for name searches
@@ -92,7 +104,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className="scroll-smooth">
       <head>
-        
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/icon.png" type="image/png" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
