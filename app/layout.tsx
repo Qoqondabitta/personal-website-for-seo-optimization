@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import FloatingRobot from "@/components/FloatingRobot";
+import ParticlesBackground from "@/components/ParticlesBackground";
 
 const FULL_NAME = "Abdulakhad Turgunaliev";
 const SITE_URL = "https://abdulakhad-turgunaliev.netlify.app"; // ← update after deploying
@@ -19,13 +20,28 @@ export const metadata: Metadata = {
     "Abdulakhad Turgunaliev",
     "Abdulaxad Turg'unaliyev",
     "Абдулахад Тургуналиев",
+    "Turgunaliev Abdulakhad",
+    "Turg'unaliyev Abdulaxad",
+    "Тургуналиев Абдулахад",
     "Abdulakhad",
     "Abdulaxad",
     "Абдулахад",
     "Тургуналиев",
     "Turgunaliev",
     "Turg'unaliyev",
-    "Machine Learning",
+    "Web Developer Canada",
+    "React JS Developer Canada",
+    "Web Developer Toronto",
+    "young entrepreneur Canada",
+    "Four Seasons Toronto",
+    "Four Seasons",
+    "Abdulakhad Turgunaliev website",
+    "Abdulakhad Turgunaliev portfolio",
+    "Абдулахад Тургуналиев веб-сайт",
+    "Абдулахад Тургуналиев личный сайт",
+    "Абдулахад Тургуналиев портфолио",
+    "Abdulaxad Turg'unaliyev portfoliyosi",
+    "Abdulaxad Turg'unaliyev shaxsiy veb-sayti",
   ],
   authors: [{ name: FULL_NAME, url: SITE_URL }],
   creator: FULL_NAME,
@@ -56,7 +72,7 @@ export const metadata: Metadata = {
     title: `${FULL_NAME} — ${TAGLINE}`,
     description: META_DESCRIPTION,
     images: ["/abdulakhad-turgunaliev.jpg"],
-    creator: "@abdulakhaddev", // ← update with your Twitter/X handle
+    creator: "@iamabdulakhad", // ← update with your Twitter/X handle
   },
   alternates: { canonical: SITE_URL },
   icons: {
@@ -74,6 +90,13 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Person",
   name: "Abdulakhad Turgunaliev",
+  "alternateName": [
+  "Abdulaxad Turg'unaliyev",
+  "Абдулахад Тургуналиев",
+  "Turgunaliev Abdulakhad",
+  "Turg'unaliyev Abdulaxad",
+  "Тургуналиев Абдулахад",
+],
   birthDate: "2005-09-02",
   url: SITE_URL,
   image: `${SITE_URL}/Abdulakhad-Turgunaliev.png`,
@@ -86,7 +109,10 @@ const jsonLd = {
   },
   sameAs: [
     "https://linkedin.com/in/abdulakhad-turgunaliev",
-    "https://github.com/abdulakhad-turgunaliev",
+    "https://github.com/Qoqondabitta",
+    "https://www.telegram.com/Hammasi_Ota_Onam_Sabali",
+    "https://twitter.com/iamabdulakhad",
+    "https://abdulakhad-turgunaliev.netlify.app"
   ],
   knowsAbout: [
     "Artificial Intelligence",
@@ -116,7 +142,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <meta name="google-site-verification" content="O7Kc5EKsqXSSrMn1dbZ8xCQFLLE8rce4Ti6-OZukvyg" />
       </head>
       <body className="antialiased">
+        <ParticlesBackground />
+        {/* <main className="relative z-10"> */}
         {children}
+        {/* </main> */}
         <FloatingRobot />
       </body>
     </html>

@@ -15,50 +15,12 @@ html {
 }
 
 body {
-  background-color: #04080f; /* fallback while image loads */
-  background-image: url('/background.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+  /* background-color: #04080f; */
   color: #f1f5f9;
   font-family: 'Inter', system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
-}
-
-/* Mobile: drop fixed attachment (prevents iOS jank) */
-@media (max-width: 768px) {
-  body { background-attachment: scroll; }
-}
-
-/* ── Layer 1: dark overlay for readability + edge vignette ───────────── */
-body::before {
-  content: '';
-  position: fixed;
-  inset: 0;
-  z-index: -2;
-  pointer-events: none;
-  background:
-    /* Edge vignette */
-    radial-gradient(ellipse 130% 130% at 50% 50%,
-      transparent 32%,
-      rgba(0, 0, 0, 0.55) 100%),
-    /* Flat dark overlay */
-    linear-gradient(rgba(4, 8, 20, 0.68), rgba(4, 8, 20, 0.68));
-}
-
-/* ── Layer 2: subtle dot-grid tech texture ───────────────────────────── */
-body::after {
-  content: '';
-  position: fixed;
-  inset: 0;
-  z-index: -1;
-  pointer-events: none;
-  background-image: radial-gradient(circle, rgba(147, 197, 253, 1) 1px, transparent 1px);
-  background-size: 40px 40px;
-  opacity: 0.028;
 }
 
 ::-webkit-scrollbar { width: 6px; }
@@ -70,7 +32,7 @@ body::after {
 
 @layer components {
   .glass {
-    background: rgba(255,255,255,0.03);
+    /* background: rgba(255,255,255,0.03); */
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border: 1px solid rgba(255,255,255,0.07);

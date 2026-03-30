@@ -89,8 +89,8 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* Scroll indicator */}
-      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-slate-600 animate-fade-in delay-600" aria-hidden="true">
+      {/* Scroll indicator — hidden on small screens to prevent overlap */}
+      <div className="hidden md:flex absolute bottom-10 left-1/2 -translate-x-1/2 flex-col items-center gap-2 text-slate-600 animate-fade-in delay-600" aria-hidden="true">
         <span className="text-xs tracking-widest uppercase">Scroll</span>
         <div className="w-px h-8 bg-gradient-to-b from-slate-600 to-transparent" />
       </div>

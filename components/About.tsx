@@ -1,7 +1,7 @@
 import ProfileFacts from "./ProfileFacts";
 
 const skills = [
-  { category: "AI / ML", items: ["Python", "TensorFlow", "OpenAI API", "Claude API", "Computer Vision"] },
+  { category: "AI Tools", items: ["OpenAI API", "Claude API"] },
   { category: "Frontend", items: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Expo"] },
   { category: "Backend", items: ["Node.js", "FastAPI", "PostgreSQL", "Supabase", "REST APIs"] },
   { category: "Tools", items: ["Git", "Docker", "Vercel", "Figma", "VS Code"] },
@@ -29,23 +29,25 @@ export default function About() {
             <p>
               <strong className="text-white">Abdulakhad Turgunaliev</strong> is a{" "}
               <span className="font-semibold text-white border-b border-white/20">young entrepreneur</span> and digital
-              solutions specialist focused on building high-quality, full-stack websites and applications for
-              modern businesses.
+              solutions specialist focused on building high-quality, full-stack websites and mobile applications for
+              businesses.
             </p>
             <p>
-              With a strong interest in artificial intelligence and emerging technologies, he helps business owners
-              transform their ideas into scalable, efficient digital products. His work emphasizes clean design,
-              performance, and real-world impact.
+              His journey in business began since his childhood as his father is one of the businessmen in Uzbekistan and 
+              involved his son in his business from young age. Abdulakhad was part of his father's business operations, 
+              helping to distribute contractional instruments to local stores across Uzbekistan since the age of 13.
             </p>
             <p>
               In addition to his work in tech, he operates an{" "}
-              <span className="font-semibold text-white border-b border-white/20">international e-bike rental business in Poland</span>{" "}
-              and brings hands-on professional experience from his role at the Four Seasons Hotel Toronto.
+              <span className="font-semibold text-white border-b border-white/20">e-bike rental business in Poland</span>{" "}
+              and brings hands-on professional experience from his role at the Four Seasons Hotel.
             </p>
             <p>
-              Driven by growth, discipline, and innovation, Turgunaliev is committed to delivering value and
+              Driven by growth, discipline, and innovation, Abdulakhad Turgunaliev is committed to delivering value and
               continuously evolving in the fast-changing world of technology and business.
             </p>
+
+          {/* Download Resume Button */}
 
             <div className="pt-2">
               <a

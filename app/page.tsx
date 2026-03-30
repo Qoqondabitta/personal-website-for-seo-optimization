@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <main className="relative min-h-screen bg-[#0a0a0f] text-white overflow-hidden">
+    <main className="relative min-h-screen text-white overflow-hidden">
       {/* Ambient background orbs */}
       <div className="fixed inset-0 pointer-events-none z-0" aria-hidden="true">
         <div

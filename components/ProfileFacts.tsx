@@ -38,13 +38,13 @@ type Fact = {
 const facts: Fact[] = [
   { icon: User, label: "Name", value: "Abdulakhad Turgunaliev" },
   { icon: Calendar, label: "Born", value: "September 2, 2005" },
-  { icon: Calendar, label: "Age", value: `${calcAge("2005-09-02")}` },
-  { icon: MapPin, label: "Location", value: "Toronto, Canada" },
-  { icon: Briefcase, label: "Occupation", value: "Entrepreneur, Full-Stack Developer", badge: "Entrepreneur" },
+  { icon: Calendar, label: "Age", value: `${calcAge("2005-09-02")}, "September 2, 2005"` },
+  { icon: MapPin, label: "Location", value: "International" },
+  { icon: Briefcase, label: "Occupation", value: "Public Area Attendant", badge: "Four Seasons Hotel" },
   { icon: Star, label: "Known for", value: "Building websites & applications for businesses" },
-  { icon: Bike, label: "Business", value: "International E-bike Rental (Poland)", badge: "International Business" },
-  { icon: Building2, label: "Experience", value: "Four Seasons Hotel Toronto (since Feb 2025)" },
-  { icon: Lightbulb, label: "Interests", value: "AI, Business Development, Technology" },
+  { icon: Bike, label: "Business", value: "E-bike Rental (Poland)", badge: "International Business" },
+  { icon: Building2, label: "Experience", value: "Four Seasons Hotel (since Feb 2025)" },
+  { icon: Lightbulb, label: "Interests", value: "AI, Entrepreneurship, Technology" },
 ];
 
 export default function ProfileFacts() {
