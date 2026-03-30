@@ -80,9 +80,10 @@ export default function ParticlesBackground() {
         maxWidth: 768,
         options: {
           particles: {
-            number: { value: 45 },
+            number: { value: 20 },
             links: { enable: false },
-            move: { speed: 0.4 },
+            move: { speed: 0.25 },
+            opacity: { value: 0.3 },
           },
         },
       },
@@ -90,9 +91,9 @@ export default function ParticlesBackground() {
         maxWidth: 480,
         options: {
           particles: {
-            number: { value: 25 },
+            number: { value: 12 },
             links: { enable: false },
-            move: { speed: 0.3 },
+            move: { speed: 0.2 },
           },
         },
       },

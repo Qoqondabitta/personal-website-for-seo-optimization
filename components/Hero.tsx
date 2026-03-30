@@ -17,13 +17,13 @@ export default function Hero() {
           </div>
 
           {/* H1 — primary SEO signal */}
-          <h1 className="animate-slide-up delay-200 text-5xl md:text-6xl lg:text-7xl font-black leading-[1.05] tracking-tight">
+          <h1 className="animate-slide-up delay-200 text-5xl md:text-6xl lg:text-7xl font-black leading-[1.15] tracking-tight">
             <span className="block text-white">Abdulakhad</span>
             <span className="block gradient-text">Turgunaliev</span>
           </h1>
 
-          <p className="animate-slide-up delay-300 text-xl md:text-2xl text-slate-400 font-light font-mono tracking-wide">
-            AI Freak&nbsp;<span className="text-blue-500">|</span>&nbsp;Entrepreneur&nbsp;<span className="text-blue-500">|</span>&nbsp;Web&App Developer
+          <p className="animate-slide-up delay-300 text-lg md:text-xl text-slate-300 font-medium tracking-wide">
+            AI Freak&nbsp;<span className="text-slate-500">|</span>&nbsp;Entrepreneur&nbsp;<span className="text-slate-500">|</span>&nbsp;Web&nbsp;&amp;&nbsp;App Developer
           </p>
 
           <p className="animate-slide-up delay-400 text-slate-400 text-base leading-relaxed max-w-lg">

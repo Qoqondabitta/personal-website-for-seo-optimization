@@ -56,6 +56,9 @@ body {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     animation: gradientShift 4s ease infinite;
+    /* Prevents descenders (g, y, p) from being clipped by the paint box */
+    padding-bottom: 0.12em;
+    display: inline-block;
   }
 
   .glow-blue {
@@ -124,3 +127,24 @@ body {
   0%, 100% { transform: translateY(0px); }
   50%       { transform: translateY(-12px); }
 }
+
+/* Hide scrollbar for carousel while keeping scroll functional */
+.scrollbar-hide::-webkit-scrollbar { display: none; }
+.scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* ── Scroll-reveal ─────────────────────────────────────────────────────── */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.75s ease, transform 0.75s ease;
+}
+.reveal.reveal-active {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* Optional stagger delays for child elements */
+.reveal-delay-100 { transition-delay: 100ms; }
+.reveal-delay-200 { transition-delay: 200ms; }
+.reveal-delay-300 { transition-delay: 300ms; }
+.reveal-delay-400 { transition-delay: 400ms; }
+.reveal-delay-500 { transition-delay: 500ms; }

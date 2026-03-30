@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 import FloatingRobot from "@/components/FloatingRobot";
 import ParticlesBackground from "@/components/ParticlesBackground";
+import GlowCursor from "@/components/GlowCursor";
+import RevealObserver from "@/components/RevealObserver";
 
 const FULL_NAME = "Abdulakhad Turgunaliev";
 const SITE_URL = "https://abdulakhad-turgunaliev.netlify.app"; // ← update after deploying
@@ -147,6 +149,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {children}
         {/* </main> */}
         <FloatingRobot />
+        <GlowCursor />
+        <RevealObserver />
       </body>
     </html>
   );
