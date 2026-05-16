@@ -37,8 +37,8 @@ type Fact = {
 
 const facts: Fact[] = [
   { icon: User, label: "Name", value: "Abdulakhad Turgunaliev" },
-  // { icon: Calendar, label: "Born", value: "September 2, 2005" },
   { icon: Calendar, label: "Age", value: `${calcAge("2005-09-02")}, September 2, 2005` },
+  // { icon: Calendar, label: "Born", value: "September 2, 2005" },
   { icon: MapPin, label: "Location", value: "International" },
   { icon: Briefcase, label: "Occupation", value: "Public Area Attendant", badge: "Four Seasons Hotel" },
   { icon: Star, label: "Known for", value: "Building websites & applications for businesses" },
